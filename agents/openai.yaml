@@ -1,0 +1,4 @@
+interface:
+  display_name: "Resume Publisher CN"
+  short_description: "中文简历优化并生成 HTML、DOCX、PDF"
+  default_prompt: "Use $resume-publisher-cn to optimize my Chinese resume and generate A4 HTML, DOCX, and PDF versions."

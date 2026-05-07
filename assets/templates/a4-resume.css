@@ -1,0 +1,148 @@
+:root {
+  --accent: #1F4E79;
+  --text: #20242a;
+  --muted: #606a75;
+  --paper: #ffffff;
+  --line: #d8e0e8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eef2f5;
+  color: var(--text);
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", Arial, sans-serif;
+  line-height: 1.34;
+}
+
+.page {
+  width: min(100%, 210mm);
+  min-height: 297mm;
+  margin: 0 auto;
+  background: var(--paper);
+  padding: 11mm 11.5mm 14mm;
+  box-shadow: 0 16px 40px rgba(26, 40, 60, .14);
+}
+
+.resume-header {
+  border-bottom: 2px solid var(--accent);
+  margin-bottom: 4mm;
+  padding-bottom: 3mm;
+}
+
+.resume-header.has-photo {
+  position: relative;
+  min-height: 29mm;
+  padding-right: 30mm;
+}
+
+.profile-photo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24mm;
+  height: 28mm;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.identity {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2mm 4mm;
+  align-items: baseline;
+}
+
+h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 30px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.target {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1mm 4mm;
+  margin-top: 2mm;
+  color: var(--muted);
+  font-size: 12.2px;
+}
+
+h2 {
+  margin: 2.3mm 0 1.3mm;
+  padding-bottom: .7mm;
+  border-bottom: 1.3px solid var(--accent);
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+h3 {
+  margin: 1mm 0 .5mm;
+  color: var(--accent);
+  font-size: 15px;
+  line-height: 1.14;
+  font-weight: 800;
+}
+
+p {
+  margin: .25mm 0;
+  font-size: 12.3px;
+}
+
+ul {
+  margin: .4mm 0 1mm;
+  padding-left: 17px;
+}
+
+li {
+  margin: .25mm 0;
+  font-size: 12.3px;
+}
+
+a {
+  color: inherit;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .page {
+    width: 100%;
+    min-height: 0;
+    padding: 18px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}

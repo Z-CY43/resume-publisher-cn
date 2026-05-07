@@ -1,0 +1,26 @@
+name: "张三"
+target_role: "嵌入式工程师"
+theme:
+  accent: "#1F4E79"
+contact:
+  phone: "13800000000"
+  email: "zhangsan@example.com"
+  location: "厦门"
+sections:
+  - title: "个人优势"
+    items:
+      - "具备嵌入式设备研发经验，覆盖驱动、通信、UI、测试与交付。"
+      - "能够把硬件方案、固件开发、联调测试和现场问题复盘串成闭环。"
+  - title: "核心技能"
+    items:
+      - "嵌入式开发：C/C++、RTOS、LVGL、Keil、VSCode。"
+      - "通信与维护：蓝牙、WiFi Socket、OTA/IAP、上位机联调。"
+  - title: "重点项目"
+    entries:
+      - heading: "多参数监护仪 | RTOS / LVGL / 血压 / 血氧 / WiFi / 蓝牙"
+        bullets:
+          - "负责测量流程、UI交互、通信上报和版本升级相关功能开发。"
+          - "参与软硬件联调、异常状态提示和现场维护问题定位。"
+  - title: "教育背景"
+    items:
+      - "某某大学 | 软件工程（本科） | 2024.09-至今"
